@@ -7,7 +7,8 @@ jobs:
     - run: git clone https://github.com/7aGiven/workflow .
     - run: dpkg -L libogg0
     - run: dpkg -L libvorbis0a
-    - run: ls -lh /usr/lib/x86_64-linux-gnu/
+    - run: apt list libvorbisenc2
+    - run: apt-get install libvorbisenc2
     - run: ls -lh .
     - run: pip install fsb5
     - run: python3 a.py
