@@ -8,7 +8,7 @@ jobs:
     - run: dpkg -L libogg0
     - run: dpkg -L libvorbis0a
     - run: apt list libvorbisenc2
-    - run: apt-get install libvorbisenc2
+    - run: sudo apt-get install libvorbisenc2
     - run: ls -lh .
     - run: pip install fsb5
     - run: python3 a.py
