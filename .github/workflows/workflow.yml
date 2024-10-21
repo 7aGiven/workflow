@@ -9,5 +9,6 @@ jobs:
     - run: dpkg -L libvorbis0a
     - run: ls -lh /usr/lib/x86_64-linux-gnu/
     - run: ls -lh .
+    - run: pip install fsb5
     - run: python3 a.py
     - run: ls -lh .
